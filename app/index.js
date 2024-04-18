@@ -14,21 +14,21 @@ const Home = () => {
     const router = useRouter();
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroudColor: COLORS.lightWhite }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
             <Stack.Screen
                 options={{
-                    headerStyle: { backgroudColor: COLORS.lightWhite },
+                    headerStyle: { backgroundColor: COLORS.lightWhite },
                     headerShadowVisible: false,
                     headerLeft: () => (
-                        <ScreenHeaderBtn icon={icons.menu} dimensions="60%" />
+                        <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
                     ),
                     headerRight: () => (
                         <ScreenHeaderBtn
-                            icon={icons.profile}
-                            dimensions="100%"
+                            iconUrl={images.profile}
+                            dimension="100%"
                         />
                     ),
-                    headerTitle: "",
+                    headerTitle: "", // hides Index title
                 }}
             />
             <ScrollView showsVerticalScrollIndicator="false">
